@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+  background-color: white;
+  padding: 5rem 1rem;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 500px) {
+  .auth-form-container {
+    border: 1px solid #537188;
+    padding: 20px;
+    color: whitesmoke;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+.for-color {
+  color: rgb(71, 65, 65);
+}
+@media only screen and (min-width: 500px) {
+  .auth-form-container {
+    border: 1px solid #537188;
+    padding: 5px;
+    width: 50vw;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .auth-form-container {
+    border: 1px solid #537188;
+    padding: 20px;
+    width: 30%;
+    border-radius: 15px;
+  }
+}
+.for-color {
+  color: #021945;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.underlinepro {
+  text-decoration: underline;
+  color: #c99e3a;
+}
+.for-loginname {
+  color: #021945;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.for-login {
+  color: #021945;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.main-div {
+  width: 400px;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.for-animagelogo {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.for-space {
+  margin-bottom: 40px;
+}
+
+.error {
+  color: #fc8181;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+}
+
+form {
+  width: 95%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.2rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  color: #9ba4b5;
+  border: 2px solid #a0aec0;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #e1d4bb;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #a0aec0;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+  margin-right: 0.5rem;
+  transform: scale(1.25);
+}
+
+.border-around {
+  border: 1px solid black;
+  width: 25vw;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+button {
+  display: block;
+  margin: 2rem 0;
+  padding: 15px;
+  background-color: #e6b74b;
+  color: rgb(48, 47, 47);
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #c99e3a;
+}
+
+input.input-error,
+select.input-error {
+  border-color: #d42727;
+}
