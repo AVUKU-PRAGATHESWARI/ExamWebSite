@@ -9,7 +9,7 @@ const Loginasuser = () => {
     toast.success("Your login was Successfull", {
       className: "custom-toast",
   position: "top-right",
-  autoClose: 3000,
+  autoClose: 1000,
     });
   };
 
@@ -17,7 +17,7 @@ const Loginasuser = () => {
     toast.error("Please Enter valid Details", {
       className: "custom-toast",
   position: "top-right",
-  autoClose: 3000,
+  autoClose: 1000,
     });
   };
   
