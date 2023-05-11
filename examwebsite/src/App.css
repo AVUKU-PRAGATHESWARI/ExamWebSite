@@ -173,3 +173,24 @@ select.input-error {
   margin: 20px 0;
 }
 
+
+/* CustomToast.css */
+.custom-toast {
+  background-color: #f6e58d;
+  color: #2d3436;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width:1000px;
+  flex-direction: row;
+}
+
+.custom-toast .Toastify__toast-body {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.custom-toast .Toastify__toast-close-button {
+  color: #2d3436;
+  font-size: 16px;
+}
+
