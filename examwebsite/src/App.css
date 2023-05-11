@@ -1,7 +1,25 @@
+.Boxproperty {
+  width: 98vw;
+  justify-content: center;
+}
+.for-box {
+  border: 1px solid #021945;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.For-an-image {
+  height: 45vh;
+  width: 250px;
+}
+.for-svlogo {
+  width: 50%;
+}
 .App {
+  font-family: sans-serif;
+  text-align: center;
   text-align: center;
   background-color: white;
-  padding: 5rem 1rem;
   min-height: 100vh;
 }
 
@@ -148,3 +166,10 @@ input.input-error,
 select.input-error {
   border-color: #d42727;
 }
+.line {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin: 20px 0;
+}
+

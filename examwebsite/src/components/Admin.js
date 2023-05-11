@@ -1,10 +1,10 @@
 import { Formik, Form } from "formik";
 import CustomInput from "./CustomInputs";
-import { userSchema } from "../schemas";
+import { adminSchema } from "../schemas";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-const User = () => {
+const Loginasuser = () => {
   const successToast = () => {
     toast.success("Login Success!", {
       position: toast.POSITION.TOP_RIGHT
@@ -46,34 +46,34 @@ const User = () => {
         />
         <div className="for-loginname">
           <div className="border">
-            <h2 className="underlinepro ">Student Login</h2>
+            <h2 className="underlinepro ">Admin Login</h2>
 
             <center>
               <img
                 alt="SVStudent"
                 width="200px"
-                src="https://res.cloudinary.com/dwiwsq9a2/image/upload/v1683715719/student_jazofz.jpg"
+                src="https://res.cloudinary.com/dwiwsq9a2/image/upload/v1683716787/teacher-removebg-preview_1_x7pdd4.png"
               />
             </center>
           </div>
           <Formik
-            initialValues={{ rollno: "", dob: "" }}
-            validationSchema={userSchema}
+            initialValues={{ idno: "", password: "" }}
+            validationSchema={adminSchema}
             onSubmit={onSubmit}
           >
             {({ isSubmitting }) => (
               <Form className="for-loginname">
                 <CustomInput
-                  label="Roll Number"
-                  name="rollno"
+                  label="ID Number"
+                  name="idno"
                   type="text"
-                  placeholder="Enter your Roll Number"
+                  placeholder="Enter your ID Number"
                 />
                 <CustomInput
-                  label="Date of Birth"
-                  name="dob"
-                  type="date"
-                  placeholder="Enter your DateOfBirth"
+                  label="Password"
+                  name="password"
+                  type="password"
+                  placeholder="Enter the correct Password"
                 />
                 <button disabled={isSubmitting} type="submit">
                   Login
@@ -88,4 +88,4 @@ const User = () => {
     </center>
   );
 };
-export default User;
+export default Loginasuser;
