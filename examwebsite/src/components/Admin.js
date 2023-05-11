@@ -6,16 +6,21 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 const Loginasuser = () => {
   const successToast = () => {
-    toast.success("Login Success!", {
-      position: toast.POSITION.TOP_RIGHT
+    toast.success("Your login was Successfull", {
+      className: "custom-toast",
+  position: "top-right",
+  autoClose: 3000,
     });
   };
 
   const errorToast = () => {
     toast.error("Please Enter valid Details", {
-      position: toast.POSITION.TOP_RIGHT
+      className: "custom-toast",
+  position: "top-right",
+  autoClose: 3000,
     });
   };
+  
   const onSubmit = async (values, actions) => {
     try {
       axios
